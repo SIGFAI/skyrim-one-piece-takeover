@@ -1,0 +1,206 @@
+{
+  "id": "sigf/skyrim-one-piece-takeover",
+  "version": "1.0.0",
+  "name": "One Piece Takeover",
+  "tagline": "Bring One Piece into the game in the most visible and funny way. The change shows in the first 30 seconds of play.",
+  "kind": "mashup",
+  "games": [
+    {
+      "game": "skyrim",
+      "role": "host",
+      "engine": "Skyrim Special Edition (Creation Engine, Papyrus) + headless plugin builder (Mutagen) + PapyrusCompiler",
+      "apps": {
+        "steam": "489830"
+      }
+    },
+    {
+      "game": "onepiece",
+      "role": "guest",
+      "label": "One Piece",
+      "canonical": false
+    }
+  ],
+  "requires": [],
+  "install": [
+    {
+      "game": "skyrim",
+      "strategy": "profile",
+      "files": [
+        {
+          "src": "skyrim-one-piece-takeover.zip",
+          "dst": "{game}/Data",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "Meshes/sigf/gum_fist.nif",
+              "sha256": "4ef69c2c61a75f4fa5cb7c30901199958193d7d4ccc546655d06b8b53fcb10e5"
+            },
+            {
+              "path": "Meshes/sigf/jolly_flag.nif",
+              "sha256": "d60814349d9e31267c90989b1cdc2c5708ff03d1f70445e56e060b735dbcfef4"
+            },
+            {
+              "path": "Meshes/sigf/manga_meat.nif",
+              "sha256": "68d7c443e355ee77d522ca352730448f423fb1986c417132f26bd3c910d48d53"
+            },
+            {
+              "path": "Meshes/sigf/straw_hat.nif",
+              "sha256": "25d1a921d5a906bd0678303e1f92b94ce9e4d91aa4733e12c3f449408b5e6510"
+            },
+            {
+              "path": "Meshes/sigf/wanted_poster.nif",
+              "sha256": "231581ecb0547ede14536d5445dc4a98f7284fa011800725bcd6d94a99f5cc36"
+            },
+            {
+              "path": "Scripts/SigfDemo.pex",
+              "sha256": "7646e49537dcedbb00a22de9b1e07d08912b71dcde66f14c33482e5cc5b649fe"
+            },
+            {
+              "path": "Scripts/SigfGum.pex",
+              "sha256": "c97bf7daf9d61fc8b7d0f42c986ea4509378ec6d9f5407193c6349165e3e1153"
+            },
+            {
+              "path": "Scripts/SigfKit.pex",
+              "sha256": "30db115e8c932a1eadd35290e014b5201cd38755bf3480a6e5d541d234278643"
+            },
+            {
+              "path": "Scripts/SigfLib.pex",
+              "sha256": "c30b71b2fd7dc9e9f9d10f7d86d2747a780adbb5e4a912bbb696758817138a2b"
+            },
+            {
+              "path": "Scripts/SigfMod.pex",
+              "sha256": "2dc71050a6a2c0774d8e1ab7b9b0ccd7b00280798c8678e225eb6861dd349f03"
+            },
+            {
+              "path": "Scripts/SigfTracked.pex",
+              "sha256": "62bcb9096e89e24909ed002aec31d64624a778808a40f61e7bf1327700f260cc"
+            },
+            {
+              "path": "Scripts/Source/SigfDemo.psc",
+              "sha256": "1464643b7b76f73962a571b4401e775470c99bf61b5f025ab945beae0fd1a32e"
+            },
+            {
+              "path": "Scripts/Source/SigfGum.psc",
+              "sha256": "83c23ded81550b2030e430e04fac59e36402c0b8ff46cbd13f75ed881eca1db1"
+            },
+            {
+              "path": "Scripts/Source/SigfKit.psc",
+              "sha256": "a3213c96bdb03bbf442024c48db4cb3049cefaec107e123a662a3d7950661934"
+            },
+            {
+              "path": "Scripts/Source/SigfLib.psc",
+              "sha256": "fd2eba7d8de896fd35746a5a6efc77bc088f094d796beec5ff8007122a9a096f"
+            },
+            {
+              "path": "Scripts/Source/SigfMod.psc",
+              "sha256": "cfdfa0e895efb020da7639e3acba0cb23e414d297f2b30b47f62bb1c1a50380c"
+            },
+            {
+              "path": "Scripts/Source/SigfTracked.psc",
+              "sha256": "7e2d5a99e164db45eb5eadc8c89b44b0e494ca335b28cae7422f7d3bfa01f305"
+            },
+            {
+              "path": "Sigf.esp",
+              "sha256": "87e9a2c812ab2ce8288c1c47a2cf5c9754d7986863ccc63b28167982ec6a73a2"
+            },
+            {
+              "path": "Textures/sigf/gum_fist_n.dds",
+              "sha256": "94be45c016f3c3bea2f94af34bc7afda070648d00b8e0ddeb05afc7454af0195"
+            },
+            {
+              "path": "Textures/sigf/gum_fist.dds",
+              "sha256": "77fd174606fd629532aec34e2b5d255a62e43552a0495fde428ba36f5af8243e"
+            },
+            {
+              "path": "Textures/sigf/jolly_flag_n.dds",
+              "sha256": "cf6a082b41e54d6d6dfe0c335123c5af292ae1c13b54b1895f161df8deb24227"
+            },
+            {
+              "path": "Textures/sigf/jolly_flag.dds",
+              "sha256": "d81f73af4711394038cea90d24fcb12a309c9a97ed7ebc5401820ebf111d3015"
+            },
+            {
+              "path": "Textures/sigf/manga_meat_n.dds",
+              "sha256": "94be45c016f3c3bea2f94af34bc7afda070648d00b8e0ddeb05afc7454af0195"
+            },
+            {
+              "path": "Textures/sigf/manga_meat.dds",
+              "sha256": "28fa8462a6838ea1be4bc071afa9b0786d2783e59851d7b6f06c99ee26701952"
+            },
+            {
+              "path": "Textures/sigf/marine_boots.dds",
+              "sha256": "5883a7ad2ca08719face7f8df9431d8f254785f444e6cbed56720a93f746610f"
+            },
+            {
+              "path": "Textures/sigf/marine_cuirass_f.dds",
+              "sha256": "6e5082854bca33b908a1f36fc30555cac7b62013b08927dd370d7784c404a9b2"
+            },
+            {
+              "path": "Textures/sigf/marine_cuirass_m.dds",
+              "sha256": "5d55bd128eac46f7c9db9df93a18cf8639879428ab230aee9e0cb49c56d18180"
+            },
+            {
+              "path": "Textures/sigf/marine_gauntlets.dds",
+              "sha256": "fdfd9240d1dc980bd86aa97bed063254c9034a0ceb28c0b78c2287b629f7171d"
+            },
+            {
+              "path": "Textures/sigf/marine_helmet.dds",
+              "sha256": "172747cdb9234e42f083f9aeb453edd5424cf65f35c8587fcb4209c8f4e44789"
+            },
+            {
+              "path": "Textures/sigf/straw_hat_n.dds",
+              "sha256": "39c23434040d4df83225d47ca97d008d89a62ecb5dc50bea0e37d74adc39cb96"
+            },
+            {
+              "path": "Textures/sigf/straw_hat.dds",
+              "sha256": "8fa134a860c30d979163524fdb66931f5b2591c7090c993c0bc35b2d9b2f3763"
+            },
+            {
+              "path": "Textures/sigf/wanted_poster_n.dds",
+              "sha256": "eb9fba465c9757f17c7634e996e0671c8736528f218dea069561a73a25fc7ced"
+            },
+            {
+              "path": "Textures/sigf/wanted_poster.dds",
+              "sha256": "1998bc1638742d62e0b0eb5d74b5cf777bd8c29b3e4dd1f135e72b41a0efb89e"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/skyrim-one-piece-takeover/releases/download/v1.0.0/skyrim-one-piece-takeover.zip",
+          "sha256": "5c9a231746c65964dacfd7810d926233e809d16594864e267c6a39445efe82ea",
+          "size": 6978107
+        }
+      ],
+      "overlay": "Data"
+    }
+  ],
+  "launch": [
+    {
+      "game": "skyrim",
+      "args": []
+    }
+  ],
+  "files": [
+    {
+      "name": "skyrim-one-piece-takeover.zip",
+      "url": "https://github.com/SIGFAI/skyrim-one-piece-takeover/releases/download/v1.0.0/skyrim-one-piece-takeover.zip",
+      "sha256": "5c9a231746c65964dacfd7810d926233e809d16594864e267c6a39445efe82ea",
+      "size": 6978107
+    }
+  ],
+  "source": {
+    "repo": "https://github.com/SIGFAI/skyrim-one-piece-takeover",
+    "license": "MIT"
+  },
+  "media": {
+    "clip": "https://sigf.ai/clips/2026-10-09-26df93a5.mp4"
+  },
+  "built_by": {
+    "agent": "SIGF",
+    "model": "claude-opus-5.5"
+  },
+  "idea_by": "team",
+  "kit": {
+    "id": "skyrim",
+    "status": "draft"
+  },
+  "built_at": "2026-10-09T14:42:33.113Z"
+}
