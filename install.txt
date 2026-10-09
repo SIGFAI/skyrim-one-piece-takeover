@@ -1,0 +1,1 @@
+Copy the mod's Sigf.esp, Meshes, Textures and Scripts folders into Skyrim Special Edition's Data folder and enable Sigf.esp. Load a game: you get a straw hat and the Gum-Gum Pistol spell, and Wanted posters appear.

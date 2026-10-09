@@ -1,0 +1,343 @@
+{
+ "stage": "WindhelmDocksExterior01",
+ "records": [
+  {
+   "type": "ArmorAddon",
+   "from": "MournerHatAA",
+   "id": "SigfStrawHatAA",
+   "set": {
+    "WorldModel.Male.File": "sigf\\straw_hat.nif",
+    "WorldModel.Female.File": "sigf\\straw_hat.nif",
+    "WorldModel.Male.AlternateTextures": [],
+    "WorldModel.Female.AlternateTextures": []
+   }
+  },
+  {
+   "type": "Armor",
+   "from": "ClothesMournerHat",
+   "id": "SigfStrawHat",
+   "set": {
+    "Name": "Straw Hat",
+    "Armature": [
+     "@SigfStrawHatAA"
+    ],
+    "Value": 500
+   }
+  },
+  {
+   "type": "Explosion",
+   "from": "crGiantStompExplosion",
+   "id": "SigfGumImpact",
+   "set": {
+    "Force": 1200,
+    "Damage": 40,
+    "Radius": 300
+   }
+  },
+  {
+   "type": "Static",
+   "from": "StockadeWoodplanks04Snow",
+   "id": "SigfGumFistStatic",
+   "set": {
+    "Model.File": "sigf\\gum_fist.nif",
+    "Model.AlternateTextures": []
+   }
+  },
+  {
+   "type": "Static",
+   "from": "StockadeWoodplanks04Snow",
+   "id": "SigfWantedPoster",
+   "set": {
+    "Model.File": "sigf\\wanted_poster.nif",
+    "Model.AlternateTextures": []
+   }
+  },
+  {
+   "type": "Projectile",
+   "from": "FireBallProjectile01",
+   "id": "SigfGumFist",
+   "set": {
+    "Model.File": "sigf\\gum_fist.nif",
+    "Speed": 1300,
+    "Range": 9000,
+    "CollisionRadius": 22,
+    "ImpactForce": 3
+   }
+  },
+  {
+   "type": "MagicEffect",
+   "from": "VoiceDragonFireballEffect1",
+   "id": "SigfGumPistolEffect",
+   "set": {
+    "Name": "Gum-Gum Pistol",
+    "Projectile": "@SigfGumFist",
+    "Explosion": "@FXdustDropTinyExplosion",
+    "ResistValue": "None",
+    "MagicSkill": "None"
+   }
+  },
+  {
+   "type": "Spell",
+   "from": "Fireball",
+   "id": "SigfGumPistol",
+   "set": {
+    "Name": "Gum-Gum Pistol",
+    "BaseCost": 0,
+    "ChargeTime": 0.2,
+    "Effects": [
+     {
+      "BaseEffect": "@SigfGumPistolEffect",
+      "Data": {
+       "Magnitude": 45,
+       "Area": 0,
+       "Duration": 0
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "Npc",
+   "from": "EncBandit04Melee1HNordM",
+   "id": "SigfMarine",
+   "set": {
+    "Name": "Marine",
+    "Configuration.TemplateFlags": "Traits|Stats|Factions|SpellList|AIData|AIPackages|Script|DefPackList|AttackData",
+    "DefaultOutfit": "@SigfMarineOutfit"
+   },
+   "scripts": [
+    {
+     "name": "SigfTracked",
+     "properties": {
+      "Tag": "marine"
+     }
+    }
+   ]
+  },
+  {
+   "type": "TextureSet",
+   "id": "SigfMarineCuirassMTex",
+   "set": {
+    "Diffuse": "sigf\\marine_cuirass_m.dds",
+    "NormalOrGloss": "armor\\imperial\\m\\cuirasstrooper_n.dds"
+   }
+  },
+  {
+   "type": "TextureSet",
+   "id": "SigfMarineCuirassFTex",
+   "set": {
+    "Diffuse": "sigf\\marine_cuirass_f.dds",
+    "NormalOrGloss": "armor\\imperial\\f\\cuirasslight_n.dds"
+   }
+  },
+  {
+   "type": "TextureSet",
+   "id": "SigfMarineBootsTex",
+   "set": {
+    "Diffuse": "sigf\\marine_boots.dds",
+    "NormalOrGloss": "armor\\imperial\\m\\bootslight_n.dds"
+   }
+  },
+  {
+   "type": "TextureSet",
+   "id": "SigfMarineGauntletsTex",
+   "set": {
+    "Diffuse": "sigf\\marine_gauntlets.dds",
+    "NormalOrGloss": "armor\\imperial\\m\\gauntletslight_n.dds"
+   }
+  },
+  {
+   "type": "TextureSet",
+   "id": "SigfMarineHelmetTex",
+   "set": {
+    "Diffuse": "sigf\\marine_helmet.dds",
+    "NormalOrGloss": "armor\\imperial\\m\\helmetlight_n.dds"
+   }
+  },
+  {
+   "type": "ArmorAddon",
+   "from": "ImperialCuirassLightAA",
+   "id": "SigfMarineCuirassAA",
+   "set": {
+    "WorldModel.Male.AlternateTextures": [
+     {
+      "Name": "CuirassTrooperLight_1",
+      "Index": 0,
+      "NewTexture": "@SigfMarineCuirassMTex"
+     }
+    ],
+    "WorldModel.Female.AlternateTextures": [
+     {
+      "Name": "cuirassleather_1",
+      "Index": 0,
+      "NewTexture": "@SigfMarineCuirassFTex"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ArmorAddon",
+   "from": "ImperialBootsLightAA",
+   "id": "SigfMarineBootsAA",
+   "set": {
+    "WorldModel.Male.AlternateTextures": [
+     {
+      "Name": "BootsLight_1",
+      "Index": 0,
+      "NewTexture": "@SigfMarineBootsTex"
+     }
+    ],
+    "WorldModel.Female.AlternateTextures": [
+     {
+      "Name": "BootsLight_1n",
+      "Index": 0,
+      "NewTexture": "@SigfMarineBootsTex"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ArmorAddon",
+   "from": "ImperialGlovesLightAA",
+   "id": "SigfMarineGauntletsAA",
+   "set": {
+    "WorldModel.Male.AlternateTextures": [
+     {
+      "Name": "GauntletsLight_1",
+      "Index": 1,
+      "NewTexture": "@SigfMarineGauntletsTex"
+     }
+    ],
+    "WorldModel.Female.AlternateTextures": [
+     {
+      "Name": "GauntletsLight_1",
+      "Index": 1,
+      "NewTexture": "@SigfMarineGauntletsTex"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ArmorAddon",
+   "from": "ImperialHelmetLightAA",
+   "id": "SigfMarineHelmetAA",
+   "set": {
+    "WorldModel.Male.AlternateTextures": [
+     {
+      "Name": "HelmetLight",
+      "Index": 0,
+      "NewTexture": "@SigfMarineHelmetTex"
+     }
+    ],
+    "WorldModel.Female.AlternateTextures": [
+     {
+      "Name": "HelmetLight",
+      "Index": 0,
+      "NewTexture": "@SigfMarineHelmetTex"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Armor",
+   "from": "ArmorImperialLightCuirass",
+   "id": "SigfMarineCuirass",
+   "set": {
+    "Name": "Marine Coat",
+    "Armature": [
+     "@SigfMarineCuirassAA"
+    ]
+   }
+  },
+  {
+   "type": "Armor",
+   "from": "ArmorImperialLightBoots",
+   "id": "SigfMarineBoots",
+   "set": {
+    "Name": "Marine Boots",
+    "Armature": [
+     "@SigfMarineBootsAA"
+    ]
+   }
+  },
+  {
+   "type": "Armor",
+   "from": "ArmorImperialLightGauntlets",
+   "id": "SigfMarineGauntlets",
+   "set": {
+    "Name": "Marine Bracers",
+    "Armature": [
+     "@SigfMarineGauntletsAA"
+    ]
+   }
+  },
+  {
+   "type": "Armor",
+   "from": "ArmorImperialLightHelmet",
+   "id": "SigfMarineHelmet",
+   "set": {
+    "Name": "Marine Cap",
+    "Armature": [
+     "@SigfMarineHelmetAA"
+    ]
+   }
+  },
+  {
+   "type": "Outfit",
+   "from": "ArmorImperialLightOutfitNoHelmet",
+   "id": "SigfMarineOutfit",
+   "set": {
+    "Items": [
+     "@SigfMarineCuirass",
+     "@SigfMarineBoots",
+     "@SigfMarineGauntlets",
+     "@SigfMarineHelmet"
+    ]
+   }
+  },
+  {
+   "type": "Ingestible",
+   "from": "FoodHorseMeatCooked",
+   "id": "SigfMangaMeat",
+   "set": {
+    "Name": "Manga Meat",
+    "Model.File": "sigf\\manga_meat.nif",
+    "Model.AlternateTextures": [],
+    "Weight": 1,
+    "Value": 50
+   }
+  },
+  {
+   "type": "Npc",
+   "from": "EncGiant01",
+   "id": "SigfGiant",
+   "set": {
+    "Name": "Elbaf Giant"
+   },
+   "scripts": [
+    {
+     "name": "SigfTracked",
+     "properties": {
+      "Tag": "giant"
+     }
+    }
+   ]
+  },
+  {
+   "type": "Static",
+   "from": "StockadeWoodplanks04Snow",
+   "id": "SigfJollyFlag",
+   "set": {
+    "Model.File": "sigf\\jolly_flag.nif",
+    "Model.AlternateTextures": []
+   }
+  }
+ ],
+ "quests": {
+  "SigfMod": {
+   "properties": {
+    "SigfDemoQuest": "@SigfDemo"
+   }
+  }
+ }
+}
